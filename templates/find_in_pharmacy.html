@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if messages %}
+<div class="alert alert-danger">{{ messages[0] }}</div>
+{% endif %}
+
+    <h1>Find a drug in the pharmacy:</h1>
+    <form method="post" action="">
+        <table>
+            <tr>
+                <td>name:</td>
+                <td><input type="text" name="find_name_pharmacy" required></td>
+            </tr>
+        </table>
+        <input class="btn btn-success" type="submit">
+    </form>
+</div>
+</body>
+</html>
+
+{% endblock %}

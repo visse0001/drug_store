@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+<div class="container">
+    {% if session %}
+        [<a href="/logout">wyloguj</a>]
+    {% endif %}
+    <h1>DB drugs</h1>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/login">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/register">Register</a>
+        </li>
+        {% if session %}
+            <li class="nav-item">
+                <a class="nav-link" href="/add">Add a drug</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/delete">Delete a drug</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/find">Find a drug</a>
+            </li>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/find_in_pharmacy">Find a drug in the pharmacy</a>
+            </li>
+        {% endif %}
+    </ul>
+
+
+    {% block content %}
+    {% endblock %}

@@ -1,0 +1,36 @@
+    {% extends "base.html" %}
+
+    {% block content %}
+
+    <h2>Drugs:</h2>
+    <table class="table">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Active substance</th>
+            <th scope="col">Price</th>
+            <th scope="col">Dosage form</th>
+            <th scope="col">Capacity</th>
+            <th scope="col">Quantity</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for p in meds %}
+        <tr>
+            <th scope="row">{{ p.id }}</th>
+            <td>{{ p.name }}</td>
+            <td>{{ p.active_substance }}</td>
+            <td>{{ p.price }}</td>
+            <td>{{ p.dosage_form }}</td>
+            <td>{{ p.capacity }}</td>
+            <td>{{ p.quantity }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+</body>
+    {% endblock %}
+
+
