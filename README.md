@@ -6,7 +6,7 @@ The application can be used in pharmacies for drugs management.
 
 To begin using this application use link below to get started.
 
-[Download DB Drugs](https://giiiiitttttt)
+[Download DB Drugs](https://github.com/visse0001/drug_store.git)
 
 ## Development setup
 
