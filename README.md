@@ -11,21 +11,20 @@ To begin using this application use link below to get started.
 ## Development setup
 
 - Install Python 3.7.2
--  "pip install -r requirements.txt"
+- Create Virtual Environment  
+`python3 -m venv env`
+-  Install dependencies  
+`pip install -r requirements.txt`
 
 ## Usage
 
-- Run db_init.py
-- Run med_app.py
+- Run db_init.py  
+`python db_init.py`
 
-<b> For tests use:</b>
+- Run med_app.py  
+`python med_app.py`
 
+To login and use the application you may use the data:  
 
-Login : test \
+Login : test  
 Password: haslo
-
-## Bugs and Issues
-
-Have a bug or an issue with this application? Send an email to:
- 
- san.kuczynska@gmail.com
